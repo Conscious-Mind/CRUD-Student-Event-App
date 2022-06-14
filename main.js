@@ -60,8 +60,10 @@ let deletePost = (e) => {
 };
 
 let editPost = (e) => {
-  student_name.value = e.parentElement.previousElementSibling.innerHTML;
-  class_name.value = e.parentElement.previousElementSibling.innerHTML;
+  student_name.value =
+    e.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML;
+  class_name.value =
+    e.parentElement.previousElementSibling.previousElementSibling.innerHTML;
   event_name.value = e.parentElement.previousElementSibling.innerHTML;
   e.parentElement.parentElement.remove();
 };
