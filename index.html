@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Student Reg App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <br /><br />
+    <h1 class="title main-heading">AAA School Event Registration Page</h1>
+    <br /><br />
+    <div class="container">
+      <div class="left">
+        <form id="form">
+          <label for=""><h3>Enter Your Details Here</h3></label>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label for="classname">Class:</label><br />
+          <input type="text" id="classname" name="classname" /><br />
+          <label for="eventname">Event:</label><br />
+          <input type="text" id="eventname" name="eventname" />
+          <br /><br />
+          <div id="msg"></div>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+      <div class="right">
+        <h3>Registered Students</h3>
+        <div id="posts">
+          <div>
+            <p>Student Name</p>
+            <p>Class Name</p>
+            <p>Event Name</p>
+            <span class="options">
+              <i onClick="editPost(this)" class="fas fa-edit"></i>
+              <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

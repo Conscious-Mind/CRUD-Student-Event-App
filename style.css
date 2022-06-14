@@ -1,0 +1,49 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0 50px;
+  background: rgb(3, 125, 209);
+  background: linear-gradient(
+    59deg,
+    rgba(3, 125, 209, 0.865983893557423) 0%,
+    rgba(11, 171, 99, 0.896774193548387) 37%,
+    rgba(19, 179, 198, 0.8687850140056023) 100%
+  );
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+}
+
+#posts {
+  width: 400px;
+}
+
+#posts div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options {
+  display: flex;
+  gap: 25px;
+}
+
+i {
+  cursor: pointer;
+}
+
+#msg {
+  color: red;
+}
+
+.title {
+  text-align: center;
+}
